@@ -9,3 +9,25 @@ const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
 const config = {};
 
 module.exports = mergeConfig(getDefaultConfig(__dirname), config);
+
+
+
+// const { getDefaultConfig } = require('metro-config');
+
+// module.exports = (async () => {
+//   const defaultConfig = await getDefaultConfig();
+
+//   const { assetExts, sourceExts } = defaultConfig.resolver;
+
+//   return {
+//     transformer: {
+//       babelTransformerPath: require.resolve('react-native-svg-transformer'),
+//     },
+//     resolver: {
+//       assetExts: assetExts.filter(ext => ext !== 'svg'),
+//       sourceExts: [...sourceExts, 'svg'],
+//     },
+//   };
+// })();
+
+
