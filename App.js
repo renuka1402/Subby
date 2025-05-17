@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { Provider } from 'react-redux';
-import { store ,persistor} from './src/Redux/store';
-import RootStack from './src/RootStack';
+import { store ,persistor} from './src/services/redux/store';
+import RootStack from './src/navigation/RootStack';
 import { PersistGate } from 'redux-persist/integration/react';
 
 const App = () => {
